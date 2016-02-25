@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exec > /tmp/last.puppet.run.log 2>&1
+exec > /tmp/last.puppet.run.${EYP_PUPPET_RUNID}.log 2>&1
 
 if [ ! -z "${EYP_PUPPET_HOST_IP}" ];
 then
