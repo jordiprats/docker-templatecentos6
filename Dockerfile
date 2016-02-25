@@ -12,5 +12,3 @@ COPY runme.sh /usr/local/bin/
 
 RUN rpm -Uvh https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm
 RUN yum install puppet -y
-
-CMD bash /usr/local/bin/runme.sh
