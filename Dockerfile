@@ -13,5 +13,6 @@ ENV EYP_IDFILE environment
 
 COPY runme.sh /usr/local/bin/
 
+RUN yum clean all
 RUN rpm -Uvh https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm
 RUN yum install puppet -y
