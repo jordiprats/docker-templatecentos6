@@ -35,4 +35,8 @@ rm -fr /var/lib/puppet/client_data
 rm -fr /var/lib/puppet/classes.txt
 rm -fr /var/lib/puppet/state
 rm -fr /var/log
+rm -fr /var/spool/postfix/pid/master.pid
+rm -fr /var/run/*pid
+rm -fr /var/run/puppet/agent.pid
+rm -fr /etc/mcollective/facts.yaml
 mkdir -p /var/log
