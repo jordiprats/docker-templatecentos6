@@ -12,6 +12,7 @@ ENV EYP_IDDIR /tmp
 ENV EYP_IDFILE environment
 
 COPY runme.sh /usr/local/bin/
+COPY loop.sh /usr/local/bin/
 
 RUN yum clean all
 RUN rpm -Uvh https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm
