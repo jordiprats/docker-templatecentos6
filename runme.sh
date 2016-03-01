@@ -30,3 +30,4 @@ yum clean all
 
 rm -fr /var/lib/puppet
 rm -fr /var/log
+mkdir -p /var/log
