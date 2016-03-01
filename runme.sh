@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash -x
+set -x
 
 exec > /tmp/last.puppet.run.${EYP_PUPPET_RUNID}.log 2>&1
 
