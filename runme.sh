@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash -x
+
 exec > /tmp/last.puppet.run.${EYP_PUPPET_RUNID}.log 2>&1
 
 if [ ! -z "${EYP_PUPPET_HOST_IP}" ];
@@ -14,4 +16,5 @@ puppet agent --server=${EYP_PUPPET_HOST} --waitforcert=30 --no-daemonize --verbo
 
 yum clean all
 
-rm -fr /var/lib/puppet /var/log
+rm -fr /var/lib/puppet
+rm -fr /var/log
