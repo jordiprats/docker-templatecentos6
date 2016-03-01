@@ -29,5 +29,11 @@ facter -p
 yum clean all
 
 rm -fr /var/lib/puppet/ssl
+rm -fr /var/lib/puppet/clientbucket
+rm -fr /var/lib/postfix/master.lock
+rm -fr /var/lib/puppet/concat
+rm -fr /var/lib/puppet/client_data
+rm -fr /var/lib/puppet/classes.txt
+rm -fr /var/lib/puppet/state
 rm -fr /var/log
 mkdir -p /var/log
