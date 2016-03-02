@@ -49,3 +49,5 @@ rm -fr /var/spool/postfix/public/qmgr
 rm -fr /var/spool/postfix/public/pickup
 rm -fr /root/.monit.state
 mkdir -p /var/log
+
+cat /tmp/last.puppet.run.$(hostname -f).dockertestinglog
