@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#set -x
-#exec > /tmp/last.puppet.run.$(hostname -f).log 2>&1
+set -x
+exec > /tmp/last.puppet.run.$(hostname -f).dockertestinglog 2>&1
 
 if [ ! -z "${EYP_PUPPET_HOST_IP}" ];
 then
