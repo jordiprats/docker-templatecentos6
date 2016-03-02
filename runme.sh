@@ -48,4 +48,5 @@ rm -fr /etc/mcollective/facts.yaml
 rm -fr /var/spool/postfix/public/qmgr
 rm -fr /var/spool/postfix/public/pickup
 rm -fr /root/.monit.state
+rm -fr /var/lib/puppet/lib
 mkdir -p /var/log
