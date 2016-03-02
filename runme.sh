@@ -19,7 +19,13 @@ cat /etc/hosts
 echo "=== facts =="
 facter -p
 
-echo "=== puppet agent =="
+echo "=== puppet agent run 1 =="
+puppet agent --server=${EYP_PUPPET_HOST} --waitforcert=30 --no-daemonize --verbose --onetime --pluginsync --masterport=${EYP_PUPPET_PORT}
+
+echo "=== puppet agent run 2 =="
+puppet agent --server=${EYP_PUPPET_HOST} --waitforcert=30 --no-daemonize --verbose --onetime --pluginsync --masterport=${EYP_PUPPET_PORT}
+
+echo "=== puppet agent run 3 =="
 puppet agent --server=${EYP_PUPPET_HOST} --waitforcert=30 --no-daemonize --verbose --onetime --pluginsync --masterport=${EYP_PUPPET_PORT}
 
 echo "=== post puppet facts =="
@@ -40,4 +46,7 @@ rm -fr /var/spool/postfix/pid/master.pid
 rm -fr /var/run/*pid
 rm -fr /var/run/puppet/agent.pid
 rm -fr /etc/mcollective/facts.yaml
+rm -fr /var/spool/postfix/public/qmgr
+rm -fr /var/spool/postfix/public/pickup
+rm -fr /root/.monit.state
 mkdir -p /var/log
