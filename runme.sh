@@ -43,8 +43,7 @@ rm -fr /var/lib/puppet/state
 rm -fr /var/run/dbus/system_bus_socket
 find /var/log -type f -delete
 rm -fr /var/spool/postfix/pid/master.pid
-rm -fr /var/run/*pid
-rm -fr /var/run/puppet/agent.pid
+find /var/run -type f -iname \*\.pid -delete
 rm -fr /etc/mcollective/facts.yaml
 rm -fr /var/spool/postfix/public/qmgr
 rm -fr /var/spool/postfix/public/pickup
