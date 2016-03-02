@@ -34,6 +34,7 @@ rm -fr /var/lib/puppet/concat
 rm -fr /var/lib/puppet/client_data
 rm -fr /var/lib/puppet/classes.txt
 rm -fr /var/lib/puppet/state
+rm -fr /var/run/dbus/system_bus_socket
 find /var/log -type f -delete
 rm -fr /var/spool/postfix/pid/master.pid
 rm -fr /var/run/*pid
