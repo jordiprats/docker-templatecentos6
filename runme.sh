@@ -12,6 +12,7 @@ mkdir -p ${EYP_IDDIR}
 echo ${EYP_ENV} > ${EYP_IDDIR}/${EYP_IDFILE}
 echo ${EYP_CUSTOMER} > ${EYP_IDDIR}/${EYP_IDCUSTOMER}
 echo ${EYP_CUSTOMERHASH} > ${EYP_IDDIR}/${EYP_IDCUSTOMERHASH}
+echo ${EYP_NODETYPE} > ${EYP_IDDIR}/${EYP_IDNODETYPE}
 
 echo "=== /etc/hosts =="
 cat /etc/hosts
